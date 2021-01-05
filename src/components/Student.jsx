@@ -4,13 +4,9 @@ import Score from './Score'
 const Student = (props) => {
   return (
     <div>
-      {props.studentInfo.map((student, idx) =>
-        <div key={idx}>
-          <h4>{student.name}</h4>
-          <p>{student.bio}</p>
-          <Score scores={student.scores} />
-        </div>
-      )}
+      <h4>{props.studentInfo.name}</h4>
+      <p>{props.studentInfo.bio}</p>
+      <Score scores={props.studentInfo.scores} />
     </div>
   )
 }

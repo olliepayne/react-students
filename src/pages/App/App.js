@@ -70,7 +70,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Student studentInfo={this.state.students}/>
+        {this.state.students.map((student) => 
+          <Student studentInfo={student}/>
+        )}
       </div>
     )
   }
