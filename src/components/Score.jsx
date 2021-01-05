@@ -4,7 +4,7 @@ const Score = (props) => {
   return (
     <div>
       <ul>
-        {props.scores.map((scoreData) => 
+        {props.scores.map((scoreData) =>
           <li>
             Test Score Received: {scoreData.date}, Score: {scoreData.score}
           </li>
